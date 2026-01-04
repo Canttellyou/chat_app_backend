@@ -2,9 +2,9 @@ import express from "express";
 import http from "http";
 import cors from "cors";
 import dotenv from "dotenv";
-import connectDB from "./config/db.ts";
-import authRoutes from "./routes/auth.routes.ts";
-import { initializeSocketServer } from "./socket/socket.ts";
+import connectDB from "./../config/db.ts";
+import authRoutes from "./../routes/auth.routes.ts";
+import { initializeSocketServer } from "./../socket/socket.ts";
 
 dotenv.config();
 
