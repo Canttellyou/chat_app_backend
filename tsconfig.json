@@ -19,8 +19,8 @@
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
-    "allowImportingTsExtensions": true,
-    "emitDeclarationOnly": true,
+    // "allowImportingTsExtensions": true,
+    // "emitDeclarationOnly": true,
 
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,

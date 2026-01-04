@@ -1,4 +1,4 @@
-import type { UserProps } from "../types.ts";
+import type { UserProps } from "../types.js";
 declare const _default: import("mongoose").Model<UserProps, {}, {}, {}, import("mongoose").Document<unknown, {}, UserProps, {}, {}> & UserProps & Required<{
     _id: unknown;
 }> & {
