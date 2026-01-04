@@ -19,10 +19,6 @@ app.get("/", (req, res) => {
   res.send("Server is running");
 });
 
-app.get("/", (req, res) => {
-  res.send("Server is running");
-});
-
 const PORT = process.env.PORT || 3000;
 
 const server = http.createServer(app);
