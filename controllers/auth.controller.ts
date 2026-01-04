@@ -46,17 +46,18 @@ export const registerUser = async (
 export const loginUser = async (req: Request, res: Response): Promise<void> => {
   const { email, password } = req.body;
   try {
-    //  find user by email
+    // find user by email
     const user = await User.findOne({ email });
     if (!user) {
       res.status(400).json({ success: false, msg: "Invalid credentials" });
-      return;
+      return; // stop execution
     }
 
     // compare passwords
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) {
       res.status(400).json({ success: false, msg: "Invalid credentials" });
+      return; // stop execution
     }
 
     const token = generateToken(user);
